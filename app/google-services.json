@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "87068594085",
+    "firebase_url": "https://fir-demo-30ffb-default-rtdb.firebaseio.com",
+    "project_id": "fir-demo-30ffb",
+    "storage_bucket": "fir-demo-30ffb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:87068594085:android:0a75c70fa449b11f17624c",
+        "android_client_info": {
+          "package_name": "com.example.firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDu-frm2Gnzy8wLpxEMkFcvrp7tZfgqSeQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

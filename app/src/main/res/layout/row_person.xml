@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:contentPadding="10dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="20dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgprofile"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/boy"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FF000000"/>
+
+            <TextView
+                android:id="@+id/tvname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"
+                android:layout_below="@id/imgprofile"/>
+
+            <TextView
+                android:id="@+id/tvemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:inputType="textEmailAddress"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/imgprofile"/>
+
+            <TextView
+                android:id="@+id/tvmobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile No"
+                android:inputType="numberDecimal"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/imgprofile"
+                android:layout_below="@id/tvemail"/>
+
+            <TextView
+                android:id="@+id/tvcourse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Course"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/imgprofile"
+                android:layout_below="@id/tvmobile"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvname"
+                android:weightSum="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Update"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#F57F17"
+                    android:textAllCaps="false"
+                    android:layout_weight="0.5"
+                    android:id="@+id/btnupdate"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delete"
+                    android:layout_margin="5dp"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#D81B60"
+                    android:layout_weight="0.5"
+                    android:id="@+id/btndelete"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
